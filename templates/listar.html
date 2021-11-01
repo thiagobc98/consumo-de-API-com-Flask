@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem de Produtos</title>
+</head>
+<body>
+    <h1>Listagem de Produtos</h1>
+
+    <table border="1">
+        <tr>
+            <td>Codigo</td>
+            <td>Descricao</td>
+            <td>Preco Compra</td>
+            <td>Preco Venda</td>
+        <tr>
+
+        {% for r in regs %}
+            <tr>
+                <td>{{r[0]}}</td>
+                <td>{{r[1]}}</td>
+                <td>{{r[2]}}</td>
+                <td>{{r[3]}}</td>
+            <tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
+
+
+
+
